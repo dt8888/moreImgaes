@@ -1,0 +1,43 @@
+/* pages/test/test.wxss */
+/*选择图片View*/
+.addImv{
+    margin: 20rpx 20rpx;
+    background-color: #EEEEEE;
+    border: 1px dashed gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*添加图片*/
+.addImv .chooseView{
+    width: 160rpx;
+    height: 160rpx;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    text-align: center;
+    line-height: 180rpx;
+    padding: 0rpx 7rpx;
+}
+.addImv .chooseImv{
+    width: 50rpx;
+    height: 50rpx;
+}
+/*已选择的图片*/
+.addImv .upFile{
+    width: 160rpx;
+    height:160rpx;
+    position: relative;
+    padding: 0rpx 7rpx;
+}
+.addImv .upFile .itemImv{
+    width: 160rpx;
+    height: 160rpx;
+    padding: 0rpx 7rpx;
+}
+.addImv .upFile .closeImv{
+    position: absolute;
+    right: 0rpx;
+    top: 0rpx;
+    width: 50rpx;
+    height:50rpx;
+}

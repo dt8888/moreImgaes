@@ -1,0 +1,15 @@
+<!--pages/test/test.wxml-->
+
+<view class="addImv">
+    <!--这个是已经选好的图片-->
+    <block wx:for="{{imgArr}}" wx:key="key">
+        <view class="upFile" bindtap="showImage" style="border-radius: 5px" data-id="{{index}}">
+            <image class="itemImv" src="{{item}}"></image>
+            <image class="closeImv" src="../images/delect.png" mode="scaleToFill" catchtap="deleteImv"  data-id="{{index}}"></image>
+        </view>
+    </block>
+    <!--这个是选择图片-->
+    <view class="chooseView" bindtap="chooseImage" style="border-radius: 5px" wx:if="{{chooseViewShow}}">
+        <image class="chooseImv" src="../images/add.png"></image>
+    </view>
+</view>
